@@ -79,8 +79,95 @@
     <hr>
     <!--Input test pass-->
     <form action="">
-        <p>Username: <input type="text" name="Username" placeholder="Tên login"></p><!-- Placeholder tạo ra chú thích-->
-        <p>Password: <input type="password" placeholder="Mật khẩu"></p>
+        <label for="username">Tên login:</label>
+        <input type="text" name="Username" placeholder="Tên login" id="username"><br><br><!-- Placeholder tạo ra chú thích-->
+        <label for="password">Mật khẩu:</label>
+        <input type="password" placeholder="Mật khẩu" id="password">
     </form>
+    <hr>
+    <!--Nhập liệu email-->
+    <form action="">
+        <label for="email">Nhập email:</label><br>
+        <input type="email" name="Username" placeholder="Nhập email" id="email"><br>
+        <label for="amount">Số lượng:</label><br>
+        <input type="number" min="1" max="9" placeholder="Số lượng" id="amount"><br>
+        <label for="birth">Ngày tháng năm sinh:</label><br>
+        <input type="date" placeholder="Ngày tháng năm sinh" id="birth">
+    </form>
+    <hr>
+    <!--Nhập dữ liệu kiểu select box-->
+    <form action="">
+        <label for="city">Chọn Thành phố!</label><br>
+        <select name="city" id="city"><br>
+            <option value="0">Chọn Thành phố</option>
+            <option value="1">DN</option>
+            <option value="2">HN</option>
+            <option value="3">HCM</option>
+        </select>
+    </form> 
+    <hr>
+    <!--Nhập dữ liệu kiểu radio box-->
+    <form action="">
+        <label for="">Chọn giới tính</label><br>
+        <label for="male">Nam</label><br>
+        <input type="radio" name="gender" value="male" id="male"><br>
+        <label for="female">Nữ</label><br>
+        <input type="radio" name="gender" value="female" id="female">
+    </form>
+    <hr>
+    <!--Nhập dữ liệu kiểu check box-->
+    <form action="">
+        <label for="">Chọn sở thích!</label><br>
+        <input type="checkbox" name="hobby" value="book" id="book">
+        <label for="book">Đọc sách</label><br>
+        <input type="checkbox" name="hobby" value="game" id="game">
+        <label for="game">Chơi game</label><br>
+        <input type="checkbox" name="hobby" value="shopping" id="shopping">
+        <label for="shopping">Shopping</label><br>
+    </form>
+    <hr>
+    <!--Form nhập liệu đoạn văn bản-->
+    <form action="">
+        <label for="post-content">Chi tiết văn bản!</label><br>
+        <!--Lưu chi tiết bài viết -->
+        <textarea name="post-content" id="post-content" cols="60" rows="10"></textarea>
+    </form>
+    <hr>
+    <!--phần tử form ẩn-->
+    <form action="">
+        <label for="username">Tên login:</label>
+        <input type="text" name="Username" placeholder="Tên login" id="username"><br><br>
+        <label for="password">Mật khẩu:</label>
+        <input type="password" placeholder="Mật khẩu" id="password"><br>
+        <input type="hidden" name="redirect-to" value="http://huuchinh.com">
+    </form>
+    <hr>
+    <!--Sumit dữ liệu form lên server-->
+    <form action="" method="get">
+        <label for="username">Tên login:</label>
+        <input type="text" name="Username" placeholder="Tên login" id="username"><br><br>
+        <label for="password">Mật khẩu:</label>
+        <input type="password" placeholder="Mật khẩu" id="password"><br><br>
+        <input type="submit" name="btn-login" value="Đăng nhập" ><br>
+        <button name="btn-login">
+            <img src="login.png" alt="Ảnh login" height="30" width="30">
+        </button>
+    </form>
+    <hr>
+    <!--Thẻ NAV HTML-->
+    <nav>
+        <ul>
+            <li><a href="">home</a></li>
+            <li><a href="">Product</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <!--Thẻ section-->
+    <section>
+        <ul>
+            <li></li>
+        </ul>
+    </section>
 </body>
 </html>
