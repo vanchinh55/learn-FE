@@ -17,6 +17,7 @@
     <h2 id="test2">Test2</h2>
     <h2 id="test3">Test3</h2>
 
+<!--Danh sách không có thứ tự-->
     <h1>Danh sách không có thứ tự!</h1>
     <ul>
         <li>List item 1
@@ -49,5 +50,37 @@
     <li>list item 2</li>
     <li>list item 3</li>
   </ol>
+<!-- tạo bảng-->
+    <table border="1">
+        <caption>Danh sách nhân viên!</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">STT</th>
+                <th colspan="2">Thông tin!</th>
+            </tr>
+            <tr>
+                <th>username</th>
+                <th>email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Van Huu chinh</td>
+                <td>huuchinh98bg1@gmail.com</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Truong Thi Cam Tu</td>
+                <td>camtu@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <!--Input test pass-->
+    <form action="">
+        <p>Username: <input type="text" name="Username" placeholder="Tên login"></p><!-- Placeholder tạo ra chú thích-->
+        <p>Password: <input type="password" placeholder="Mật khẩu"></p>
+    </form>
 </body>
 </html>
